@@ -11,7 +11,6 @@ URL: http://prime.sourceforge.jp/src/
 Source0: %{rname}-ruby-%{version}.tar.bz2
 License: LGPL
 Group: Development/Ruby
-BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: ruby-devel
 BuildRequires: sary-devel
 Obsoletes: sary-ruby
