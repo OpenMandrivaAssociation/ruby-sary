@@ -1,7 +1,7 @@
 %define rname sary
 %define name ruby-%{rname}
 %define version 1.2.0
-%define release %mkrel 9
+%define release %mkrel 10
 
 Summary: Ruby Binding of Sary
 Name: %{name}
