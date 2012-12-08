@@ -1,0 +1,33 @@
+diff -urN sary-ruby-1.2.0/builder.c sary-ruby-1.2.0-patched/builder.c
+--- sary-ruby-1.2.0/builder.c	2012-09-19 00:35:07.713716001 +1100
++++ sary-ruby-1.2.0-patched/builder.c	2012-09-19 00:53:27.319716019 +1100
+@@ -72,7 +72,7 @@
+         builder = sary_builder_new2(file_name_ptr, array_name_ptr);
+     }
+     if (builder == NULL)
+-	rb_raise(rb_eIOError, g_strerror(errno));
++	rb_raise(rb_eIOError, "%s", g_strerror(errno));
+ 
+     Check_Type(klass, T_DATA);
+     RDATA(klass)->dfree = (RUBY_DATA_FUNC)rsbuilder_destroy;
+@@ -104,7 +104,7 @@
+     }
+ 
+     if (func(builder) == FALSE) {
+-	rb_raise(rb_eRuntimeError, g_strerror(errno));
++	rb_raise(rb_eRuntimeError, "%s", g_strerror(errno));
+     }
+ 
+     return klass;
+diff -urN sary-ruby-1.2.0/searcher.c sary-ruby-1.2.0-patched/searcher.c
+--- sary-ruby-1.2.0/searcher.c	2012-09-19 00:35:07.714716001 +1100
++++ sary-ruby-1.2.0-patched/searcher.c	2012-09-19 00:36:07.542715996 +1100
+@@ -98,7 +98,7 @@
+         searcher = sary_searcher_new2(file_name_ptr, array_name_ptr);
+     }
+     if (searcher == NULL)
+-	rb_raise(rb_eIOError, g_strerror(errno));
++	rb_raise(rb_eIOError, "%s", g_strerror(errno));
+ 
+     Check_Type(klass, T_DATA);
+     RDATA(klass)->dfree = (RUBY_DATA_FUNC)rsearcher_destroy;
