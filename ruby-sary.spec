@@ -3,7 +3,7 @@
 Summary:	Ruby Binding of Sary
 Name:		ruby-%{rname}
 Version:	1.2.0
-Release:	14
+Release:	15
 License:	LGPL
 Group:		Development/Ruby
 URL:		http://prime.sourceforge.jp/src/
