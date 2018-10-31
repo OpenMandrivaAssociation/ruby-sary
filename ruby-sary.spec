@@ -3,7 +3,7 @@
 Summary:	Ruby Binding of Sary
 Name:		ruby-%{rname}
 Version:	1.2.0
-Release:	20
+Release:	21
 License:	LGPL
 Group:		Development/Ruby
 URL:		http://prime.sourceforge.jp/src/
@@ -77,7 +77,7 @@ make
 * Tue Jul 19 2005 Pascal Terjan <pterjan@mandriva.org> 1.2.0-3mdk
 - fix buildrequires (sary-devel provide is not versionned)
 
-* Sat Apr 16 2005 Giuseppe Ghibò <ghibo@mandriva.com> 1.2.0-2mdk
+* Sat Apr 16 2005 Giuseppe GhibÃ² <ghibo@mandriva.com> 1.2.0-2mdk
 - Fixes %%files for for X86-64.
 
 * Wed Mar 30 2005 UTUMI Hirosi <utuhiro78@yahoo.co.jp> 1.2.0-1mdk
