@@ -6,7 +6,7 @@ Version:	1.2.0
 Release:	21
 License:	LGPL
 Group:		Development/Ruby
-URL:		http://prime.sourceforge.jp/src/
+URL:		https://prime.sourceforge.jp/src/
 Source0:	%{rname}-ruby-%{version}.tar.bz2
 Patch0:		sary-ruby-1.2.0-ruby19.patch
 Patch1:		sary-ruby-1.2.0-sfmt.patch
