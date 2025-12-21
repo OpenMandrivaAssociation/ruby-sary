@@ -10,6 +10,7 @@ URL:		https://prime.sourceforge.jp/src/
 Source0:	%{rname}-ruby-%{version}.tar.bz2
 Patch0:		sary-ruby-1.2.0-ruby19.patch
 Patch1:		sary-ruby-1.2.0-sfmt.patch
+BuildRequires:	make
 BuildRequires:	ruby-devel
 BuildRequires:	sary-devel
 
